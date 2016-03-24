@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>数据新闻系列--雾霾</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet"><!--与轮播图相关-->
+</head>
+<body>
+<style>
+    .mainDiv {
+        width: 80%;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mainDivv {
+        width: 92%;
+        height: 370px;
+        margin-bottom: 5%;
+        margin-left: 7%;
+    }
+
+    .mainDiv1 {
+        width: 80%;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main {
+        height: 400px;
+        /*width: 778px !important;*/
+        overflow: hidden;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #e3e3e3;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .main_box {
+        position: relative;
+        top: 10%;
+    }
+
+</style>
+<div class="navbar-wrapper">
+    <div class="container">
+    </div>
+</div>
+
+<!-- Carousel轮播图特效================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active"><!--图片1-->
+            <img class="first-slide" src="../img/cover.png" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+        <div class="item"><!--图片2-->
+            <img class="second-slide" src="../img/cover1.png" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption1">
+                    <h1><img src="../img/cover1-fore.png"></h1>
+                </div>
+            </div>
+        </div>
+        <div class="item"><!--图片3-->
+            <img class="third-slide" src="../img/cover2.png" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption2">
+                    <h1><img src="../img/cover2-fore.png"></h1>
+                </div>
+            </div>
+        </div>
+        <div class="item"><!--图片4-->
+            <img class="fourth-slide" src="../img/cover3.png" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption3">
+                    <h1><img src="../img/cover3-fore.png"></h1>
+                </div>
+            </div>
+        </div>
+        <div class="item"><!--图片5-->
+            <img class="fifth-slide" src="../img/cover4.png" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption4">
+                    <h1><img src="../img/cover4-fore.png"></h1>
+                </div>
+            </div>
+        </div>
+        <div class="item"><!--图片6-->
+            <img class="sixth-slide" src="../img/cover5.png" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption5">
+                    <h1><img src="../img/cover5-fore.png"></h1>
+                </div>
+            </div>
+        </div>
+        <div class="item"><!--图片7-->
+            <img class="seventh-slide" src="../img/cover6.png" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption6">
+                    <h1><img src="../img/cover6-fore.png"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><!-- /.carousel -->
+
+
+<!-- 地图================================================== -->
+
+<div class="main_box">
+    <div id="main4" class="mainDiv"
+         style="border: 1px solid rgb(255, 255, 255); padding: 10px; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; background-color: rgba(0, 0, 0, 0);"
+         _echarts_instance_="1451458060242">
+        <div style="position: relative; overflow: hidden; width: 800px; height: 600px;">
+            <div data-zr-dom-id="bg" class="zr-element"
+                 style="position: absolute; left: 0px; top: 0px; width: 800px; height: 600px; -webkit-user-select: none;"></div>
+            <canvas width="800" height="600" data-zr-dom-id="0" class="zr-element"
+                    style="position: absolute; left: 0px; top: 0px; width: 800px; height: 600px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+            <canvas width="800" height="600" data-zr-dom-id="1" class="zr-element"
+                    style="position: absolute; left: 0px; top: 0px; width: 800px; height: 600px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+            <canvas width="800" height="600" data-zr-dom-id="_zrender_hover_" class="zr-element"
+                    style="position: absolute; left: 0px; top: 0px; width: 800px; height: 600px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+            <div class="echarts-tooltip zr-element"
+                 style="position: absolute; display: none; border: 0px solid rgb(51, 51, 51); white-space: nowrap; transition: left 0.4s, top 0.4s; border-radius: 4px; color: rgb(255, 255, 255); padding: 5px; left: 609px; top: 116px; background-color: rgba(0, 0, 0, 0.701961);">
+                PM2.5季均浓度 <br>内蒙古 : 51.67
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/echarts-all.js"></script>
+<script src="../js/04fef081678a8f3.js"></script>
+<!--地图数据修改-->
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main4'));
+    var option = {
+        timeline: {
+            x: 40,
+
+            data: [
+                '1-3', '4-6', '7-9', '10-12'
+            ],
+            label: {
+                formatter: function (s) {
+                    return s.slice(0, 4);
+                }
+            },
+            autoPlay: true,
+            playInterval: 1000
+        },
+        options: [
+            {
+                title: {
+                    'text': '2015年1-3月PM2.5季平均浓度',
+                    'subtext': '（单位：微克/立方米）数据由绿色和平统计整理'
+                },
+                tooltip: {'trigger': 'item'},
+                toolbox: {
+                    'show': false,
+                    'feature': {
+                        'mark': {'show': true},
+                        'dataView': {'show': true, 'readOnly': false},
+                        'restore': {'show': true},
+                        'saveAsImage': {'show': true}
+                    }
+                },
+                dataRange: {
+                    x: 0,
+                    y: 280,
+                    min: 0,
+                    max: 114,
+                    text: ['高', '低'],           // 文本，默认为数值文本
+                    calculable: true,
+                    x: 'left',
+                    color: ['grey', 'lightskyblue']
+                },
+                series: [
+                    {
+                        'name': 'PM2.5季均浓度',
+                        'type': 'map',
+                        'data': dataMap.dataGDP['2002']
+                    }
+                ]
+            },
+            {
+                title: {'text': '2015年4-6月PM2.5季平均浓度'},
+                series: [
+                    {'data': dataMap.dataGDP['2003']}
+                ]
+            },
+            {
+                title: {'text': '2015年7-9月PM2.5季平均浓度'},
+                series: [
+                    {'data': dataMap.dataGDP['2004']}
+                ]
+            },
+            {
+                title: {'text': '2015年10-12月PM2.5季平均浓度'},
+                series: [
+                    {'data': dataMap.dataGDP['2005']}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+</script>
+<p style="margin-left:40%;margin-top: 2%;">注：可调节左侧控制条或点击省份查看更多信息</p>
+</div>
+<div class="main_box">
+</div>
+</div>
+
+<!--Third =======class="col-md-7"=========================================== -->
+
+<div class="container marketing">
+    <!--雾霾经济-->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <p class="lead1">12月19日至22日，北京居民再次迎来中度至重度污染。</p>
+            <p class="lead">18日7时，北京发布空气重污染红色预警。</p>
+            <p class="lead">根据阿里健康数据研究中心，于20日发布的北京雾霾消费报告:</p>
+            <div class="wrap8 main_bg">
+                <div class="main_box"><!--雾霾经济的折线图，底部js可以修改数据,js对应的图形id为main2-->
+                    <div id="main2" class="mainDiv1"
+                         style="border: 1px solid rgb(255, 255, 255); padding: 10px; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; position: relative; background-color: transparent;"
+                         _echarts_instance_="ec_1458378744513">
+                        <div style="position: relative; overflow: hidden; width: 800px; height: 600px; cursor: default;">
+                            <canvas width="800" height="600" data-zr-dom-id="zr_0"
+                                    style="position: absolute; left: 0px; top: 0px; width: 800px; height: 600px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+                        </div>
+                        <div style="position: absolute; display: none; border:0px solid rgb(51, 51, 51); white-space: nowrap; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1); border-radius: 4px; color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: 21px; padding: 5px; left: 187.636px; top: 492px; background-color: rgba(50, 50, 50, 0.701961);">
+                            3月<br>北京月均浓度 : 85.4
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="lead">在11月27日至12月1日的橙色预警期间，口罩销售情况有了明显增加。</p>
+            <p class="lead">而在12月7日至12月10日的红色预警期间，口罩的销量大幅攀升。</p>
+            <p class="lead">并于12月9日达到高峰，总体为平时销售量的9.3倍、橙色预警期间销售量的近3倍。</p>
+            <p class="lead">血压计的购买行为和雾霾发生的时间段高度匹配：在北京11月27日-12月1日的雾霾期间。</p>
+            <p class="lead">阿里零售平台上的血压仪器销售量突然飙升，并于11月30日达到峰值。</p>
+            <p class="lead">12月7日至9日雾霾期间血压仪销量也同步飚高，在12月8日到达峰值。</p>
+            <p class="lead">成为双12的两个销售小高峰。</p>
+
+            <!-- 雾霾经济的折线图================================================== -->
+            <script type="text/javascript">
+                var myChart = echarts.init(document.getElementById('main2'));
+                var option1 = {
+                    title: {
+                        text: '北京PM2.5月均浓度11、12月猛增',
+                        subtext: '单位：微克/立方米'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+
+
+                    toolbox: {
+                        show: false,
+                        feature: {
+                            dataZoom: {},
+                            dataView: {readOnly: false},
+                            magicType: {type: ['line', 'bar']},
+                            restore: {},
+                            saveAsImage: {}
+                        }
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            boundaryGap: false,
+                            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            axisLabel: {
+                                formatter: '{value} '
+                            }
+                        }
+                    ], grid: {
+                        x: 36,
+                        y: 100,
+                        x2: 40,
+                        y2: 30
+                    },
+                    series: [
+                        {
+                            name: '北京月均浓度',
+                            type: 'line',
+                            data: [98.0, 93.2, 85.4, 72.0, 55.6, 62.3, 63.9, 44.5, 52.2, 71.0, 118.8, 151.6],
+                            markPoint: {
+                                data: [
+                                    {type: 'max', name: '最大值：151.6'},
+                                    {type: 'min', name: '最小值：44.5'}
+                                ]
+                            },
+                            markLine: {
+                                data: [
+                                    [{
+                                        name: '35.5',
+                                        x: 100,
+                                        y: 674
+                                    }, {
+                                        x: 950,
+                                        y: 674
+                                    }]
+                                ]
+                            }
+                        }
+
+
+                    ]
+                };
+                myChart.setOption(option1);
+            </script>
+        </div>
+        <div class="col-md-5">
+            <p class="lead2">微博上、朋友圈里，到处都充斥着有关雾霾的内容，或惶恐担忧，或调侃吐槽，或批评责骂，或直接应对。</p>
+            <p class="lead">总之，在这场谈“霾”色变的舆论争议中，空气质量问题再次成为公众最关心的话题，没有之一。在这里，雾霾不再仅仅是环境问题，雾霾已经成为无法回避的社会问题。</p>
+            <!--雾霾舆论的直方图，id为main-rect，<script>中修改数据-->
+            <div id="main-rect" style="height:300px;width:100%;"></div>
+            <script src="../js/echarts.js" charset="utf-8"></script>
+            <script type="text/javascript">
+                // 路径配置
+                require.config({
+                    paths: {
+                        echarts: '../js'
+                    }
+                });
+                require(
+                        [
+                            'echarts',
+                            'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+                        ],
+                        function (ec) {
+                            // 基于准备好的dom，初始化echarts图表
+                            var myChart = ec.init(document.getElementById('main-rect'));
+                            var option = {
+                                tooltip: {
+                                    trigger: 'axis'
+                                },
+                                legend: {
+                                    data: ['新闻声量', '网民搜索指数']
+                                },
+                                toolbox: {
+                                    show: true,
+                                },
+                                calculable: true,
+                                xAxis: [
+                                    {
+                                        type: 'category',
+                                        data: ['11月25日', '11月26日', '11月27日', '11月28日', '11月29日', '11月30日','12月1日' ]
+                                    }
+                                ],
+                                yAxis: [
+                                    {
+                                        type: 'value'
+                                    }
+                                ],
+                                series: [
+                                    {
+                                        name: '新闻声量',
+                                        type: 'bar',
+                                        data: [3000, 2910, 3130, 2811, 510, 3601, 3589,],
+                                        markPoint: {
+                                            data: [
+                                                {type: 'max', name: '最大值'},
+                                                {type: 'min', name: '最小值'}
+                                            ]
+                                        },
+                                        markLine: {
+                                            data: [
+                                                {type: 'average', name: '平均值'}
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        name: '网民搜索指数',
+                                        type: 'bar',
+                                        data: [50000, 61000, 73498, 86590, 101091, 34329, 35002],
+                                        markPoint: {
+                                            data: [
+                                                {type: 'max', name: '最大值'},
+                                                {type: 'min', name: '最小值'}
+                                            ]
+                                        },
+                                        markLine: {
+                                            data: [
+                                                {type: 'average', name: '平均值'}
+                                            ]
+                                        }
+                                    }
+                                ]
+                            };
+                            // 为echarts对象加载数据
+                            myChart.setOption(option);
+                        }
+                );
+            </script>
+            <p class="lead">根据百度舆情的数据，从一周内网名搜索量，新闻声量，微博声量，三方面看，舆论对雾霾的关注仍处在升温阶段。</p>
+            <p class="lead">需要关注的是，截止12月1日18时，当天的额搜索指数已接近三十万次，微博声量超过八万条，相关新闻报道4000篇以上。</p>
+
+            <img class="ecoimg" src="../img/guidance-fore.png">
+            <p class="lead">此外，根据雾霾相关网民搜索词分析，网民较关注雾霾危害及防霾方法，占比约为32%。</p>
+            <p class="lead">包括“雾霾可行性解决措施”，“因雾霾学校停课”，“防雾霾口罩”，“防雾霾面罩”等，都是网民希望通过互联网获取到指导和帮助。</p>
+        </div>
+    </div>
+
+    <!--雾霾之京========class="col-md-6"====================================================================-->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-6">
+            <p class="lead1">北京市环保局公布的2015年北京市空气质量数据显示：</p>
+            <p class="lead">去年北京空气质量达标的天数为186天</p>
+            <p class="lead">占全年总数的51%，但仍有49%的日子</p>
+            <p class="lead">空气有污染，其中重度污染31天</p>
+            <p class="lead">严重污染15天</p>
+            <div id="main" style="height:400px;width:50%;margin-left: 7%;"></div>
+            <!--雾霾之京，图一，饼图-->
+            <script type="text/javascript">
+                // 路径配置
+                require.config({
+                    paths: {
+                        echarts: '../js'
+                    }
+                });
+
+                // 这里可以修改雾霾之京的饼图数据
+                require(
+                        [
+                            'echarts',
+                            'echarts/chart/pie' // 使用柱状图就加载bar模块，按需加载
+                        ],
+                        function (ec) {
+                            // 基于准备好的dom，初始化echarts图表
+                            var myChart = ec.init(document.getElementById('main'));
+                            var option = {
+                                legend: {
+                                    orient: 'vertical',
+                                    x: 'left',
+                                    data: [ '严重污染','重度污染','中度污染', '轻度污染', '质量达标']
+                                },
+                                toolbox: {
+                                    show: true,
+                                },
+                                calculable: true,
+                                series: [
+                                    {
+                                        name: '访问来源',
+                                        type: 'pie',
+                                        radius: '55%',
+                                        center: ['45%', '60%'],
+                                        data: [{value: 15, name: '严重污染'},
+                                            {value: 31,name: '重度污染'},
+                                            {value: 62, name: '中度污染'},
+                                            {value: 71, name: '轻度污染'},
+                                            {value: 186, name: '质量达标'}
+                                        ]
+                                    }
+                                ]
+                            };
+                            // 为echarts对象加载数据
+                            myChart.setOption(option);
+                        }
+                );
+            </script>
+            <p class="lead">去年北京在11月到12月当中发生重污染22天，</p>
+            <p class="lead">占11月12月天数的36%</p>
+            <p class="lead">同比增加15天</p>
+            <div class="rightt">
+                <p class="lead1">北京2015年第四季度的PM2.5平均浓度比2014年</p>
+                <p class="lead">同期平均浓度还上升了27.5%</p>
+                <div id="main1" style="height:300px;width:110%;"></div>
+                <!--雾霾之京，图二，折线图-->
+                <script type="text/javascript">
+                    // 路径配置
+                    require.config({
+                        paths: {
+                            echarts: '../js'
+                        }
+                    });
+
+                    // 使用
+                    require(
+                            [
+                                'echarts',
+                                'echarts/chart/line', // 使用柱状图就加载bar模块，按需加载
+                            ],
+                            function (ec) {
+                                // 基于准备好的dom，初始化echarts图表
+                                var myChart = ec.init(document.getElementById('main1'));
+
+                                var option = {
+                                    tooltip: {
+                                        trigger: 'axis'
+                                    },
+                                    legend: {
+                                        data: ['2015年平均PM2.5浓度']
+                                    },
+                                    toolbox: {
+                                        show: true,
+                                    },
+                                    calculable: true,
+                                    xAxis: [
+                                        {
+                                            type: 'category',
+                                            boundaryGap: false,
+                                            data: ['1月', '2月', '3月', '4月','5月', '6月', '7月', '8月','9月', '10月', '11月', '12月']
+                                        }
+                                    ],
+                                    yAxis: [
+                                        {
+                                            type: 'value',
+                                            axisLabel: {
+                                                formatter: '{value} μg/m3'
+                                            }
+                                        }
+                                    ],
+                                    series: [
+                                        {
+                                            name: '2015年平均PM2.5浓度',
+                                            type: 'line',
+                                            data: [98,90,85,74,55,57,60,45,53,73,120,151],
+                                            markPoint: {
+                                                data: [
+                                                    {type: 'max', name: '最大值'},
+                                                    {type: 'min', name: '最小值'}
+                                                ]
+                                            },
+                                            markLine: {
+                                                data: [
+                                                    {type: 'average', name: '平均值'}
+                                                ]
+                                            }
+                                        }
+
+                                    ]
+                                };
+                                // 为echarts对象加载数据
+                                myChart.setOption(option);
+                            }
+                    );
+                </script>
+                <h5 style="text-align: center;">北京全年空气质量情况(单位：天）</h5>
+                <div id="mainn" class="mainDivv" style="border: 1px solid rgb(255, 255, 255); padding: 10px;
+                -webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; position: relative; background-color: transparent;"
+                     _echarts_instance_="ec_1458460386086">
+                    <div style="position: relative; overflow: hidden; width: 800px; height: 600px; cursor: default;">
+                        <canvas width="800" height="500" data-zr-dom-id="zr_0" style="position: absolute;
+                          left: 0px; top: 0px; width: 800px; height: 500px;
+                         -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        </canvas>
+                    </div>
+
+                    <!--雾霾之京，图三，直方图-->
+                    <script type="text/javascript">
+                        var myChart = echarts.init(document.getElementById('mainn'));
+                        var option = {
+
+                            tooltip: {
+                                trigger: 'axis',
+                                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                                    type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                                },
+
+                            },
+                            legend: {
+                                top: '50px',
+                                selectedMode: true,
+                                data: ['严重污染', '重度污染', '中度污染', '轻度污染', '良', '优']
+                            },
+                            toolbox: {
+                                show: false,
+                            },
+                            calculable: false,
+                            xAxis: [
+                                {
+                                    type: 'category',
+                                    data: ['2013', '2014', '2015']
+                                }
+                            ], grid: {
+                                x: 36,
+                                y: 55,
+                                x2: 20,
+                                y2: 30
+                            },
+                            yAxis: [
+                                {
+                                    type: 'value',
+                                    boundaryGap: [0, 0.1]
+                                }
+                            ],
+                            series: [
+                                {
+                                    name: '优',
+                                    type: 'bar',
+                                    stack: 'sum',
+                                    barCategoryGap: '30%',
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#87cefa',
+                                            barBorderColor: 'rgba(0,0,0,0)',
+                                            barBorderWidth: 6,
+                                            barBorderRadius: 0,
+                                            label: {
+                                                show: true, position: 'insideTop'
+                                            }
+                                        }
+                                    },
+                                    data: [41, 39, 52]
+                                }, {
+                                    name: '良',
+                                    type: 'bar',
+                                    stack: 'sum',
+                                    barCategoryGap: '50%',
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#86c0e5',
+                                            barBorderColor: 'rgba(0,0,0,0)',
+                                            barBorderWidth: 6,
+                                            barBorderRadius: 0,
+                                            label: {
+                                                show: true, position: 'insideTop'
+                                            }
+                                        }
+                                    },
+                                    data: [135, 133, 134]
+                                }, {
+                                    name: '轻度污染',
+                                    type: 'bar',
+                                    stack: 'sum',
+                                    barCategoryGap: '50%',
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#83a6bb',
+                                            barBorderColor: 'rgba(0,0,0,0)',
+                                            barBorderWidth: 6,
+                                            barBorderRadius: 0,
+                                            label: {
+                                                show: true, position: 'insideTop'
+                                            }
+                                        }
+                                    },
+                                    data: [84, 85, 71]
+                                }, {
+                                    name: '中度污染',
+                                    type: 'bar',
+                                    stack: 'sum',
+                                    barCategoryGap: '50%',
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#818e95',
+                                            barBorderColor: 'rgba(0,0,0,0)',
+                                            barBorderWidth: 6,
+                                            barBorderRadius: 0,
+                                            label: {
+                                                show: true, position: 'insideTop'
+                                            }
+                                        }
+                                    },
+                                    data: [47, 61, 62]
+                                }, {
+                                    name: '重度污染',
+                                    type: 'bar',
+                                    stack: 'sum',
+                                    barCategoryGap: '50%',
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#292828',
+                                            barBorderColor: 'rgba(0,0,0,0)',
+                                            barBorderWidth: 6,
+                                            barBorderRadius: 0,
+                                            label: {
+                                                show: true, position: 'insideTop'
+                                            }
+                                        }
+                                    },
+                                    data: [45, 32, 31]
+                                }, {
+                                    name: '严重污染',
+                                    type: 'bar',
+                                    stack: 'sum',
+                                    barCategoryGap: '50%',
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#410404',
+                                            barBorderColor: 'rgba(0,0,0,0)',
+                                            barBorderWidth: 6,
+                                            barBorderRadius: 0,
+                                            label: {
+                                                show: true, position: 'top', textStyle: {
+                                                    color: '#5f1634'
+                                                }
+
+                                            }
+                                        }
+                                    },
+                                    data: [13, 15, 15]
+                                }
+                            ]
+                        };
+
+                        myChart.setOption(option);
+
+                    </script>
+                    <div style="position: absolute; display: none; border: 0px solid rgb(51, 51, 51);
+                         white-space: nowrap; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+                          border-radius: 4px; color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: normal;
+                          font-stretch: normal; font-size: 14px; line-height: 21px; padding: 5px;
+                          left: 180px;  background-color: rgba(50, 50, 50, 0.701961);">
+                        2013<br>优 : 41<br>良 : 135<br>轻度污染 : 84<br>中度污染 : 47<br>重度污染 : 45<br>严重污染 : 13
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--治霾成绩单========class="col-md-13"====================================================================-->
+    <hr class="featurette-divider">
+    <div    class="row featurette">
+            <div class="col-md-13">
+                <p style="color:#006492;font-size:17px;margin-top:5%;margin-left:25%">自2013年开展PM2.5监测以来，本市PM2.5浓度水平在波动中呈逐渐下降趋势。</p>
+                <div id="main7" style="height:350px;width:50%; margin-left:5%;margin-top:2%;" ></div><!--成绩单，图1，折线图-->
+                <script type="text/javascript">
+                    // 路径配置
+                    require.config({
+                        paths: {
+                            echarts: '../js'
+                        }
+                    });
+
+                    // 使用
+                    require(
+                            [
+                                'echarts',
+                                'echarts/chart/line', // 使用柱状图就加载bar模块，按需加载
+                            ],
+                            function (ec) {
+                                // 基于准备好的dom，初始化echarts图表
+                                var myChart = ec.init(document.getElementById('main7'));
+
+                                var option = {
+                                    tooltip: {
+                                        trigger: 'axis'
+                                    },
+                                    legend: {
+                                        data: ['2015重度污染天数']
+                                    },
+                                    toolbox: {
+                                        show: true,
+                                    },
+                                    calculable: true,
+                                    xAxis: [
+                                        {
+                                            type: 'category',
+                                            boundaryGap: true,
+                                            data: ['2013', '2014', '2015']
+                                        }
+                                    ],
+                                    yAxis: [{
+                                        type: 'value',
+                                        axisLabel: {
+                                            formatter: '{value} 天'
+                                        },
+                                        data: [60,50,40]
+                                    }
+
+                                    ],
+                                    series: [
+                                        {
+                                            name: '2015重度污染天数',
+                                            type: 'line',
+                                            data: [58,45,42]
+
+                                        }
+
+                                    ]
+                                };
+                                // 为echarts对象加载数据
+                                myChart.setOption(option);
+                            }
+                    );
+                </script>
+                <div id="main6" style="height:350px;width:50%; margin-left:48%;margin-top:-32.5%;" ></div><!--成绩单，图2，折线图-->
+                <script type="text/javascript">
+                    // 路径配置
+                    require.config({
+                        paths: {
+                            echarts: '../js'
+                        }
+                    });
+
+                    // 使用
+                    require(
+                            [
+                                'echarts',
+                                'echarts/chart/line', // 使用柱状图就加载bar模块，按需加载
+                            ],
+                            function (ec) {
+                                // 基于准备好的dom，初始化echarts图表
+                                var myChart = ec.init(document.getElementById('main6'));
+
+                                var option = {
+                                    tooltip: {
+                                        trigger: 'axis'
+                                    },
+                                    legend: {
+                                        data: ['平均浓度']
+                                    },
+                                    toolbox: {
+                                        show: true,
+                                    },
+                                    calculable: true,
+                                    xAxis: [
+                                        {
+                                            type: 'category',
+                                            boundaryGap: true,
+                                            data: ['2013', '2014', '2015']
+                                        }
+                                    ],
+                                    yAxis: [{
+                                        type: 'value',
+                                        axisLabel: {
+                                            formatter: '{value} u/mg3'
+                                        },
+                                        data: [60,50,40]
+                                    }
+
+                                    ],
+                                    series: [
+                                        {
+                                            name: '平均浓度',
+                                            type: 'line',
+                                            data: [218,234,239]
+
+                                        }
+
+                                    ]
+                                };
+                                // 为echarts对象加载数据
+                                myChart.setOption(option);
+                            }
+                    );
+                </script>
+                <p style="color:#000000;font-size:17px;margin-top:-1%;margin-left:37%">PM2.5重污染天数减少,平均浓度升高</p>
+                <div id="main8" style="height:350px;width:50%; margin-left:6%;margin-top:-1%;" ></div><!--成绩单，图3，折线图-->
+                <script type="text/javascript">
+                    // 路径配置
+                    require.config({
+                        paths: {
+                            echarts: '../js'
+                        }
+                    });
+
+                    // 使用
+                    require(
+                            [
+                                'echarts',
+                                'echarts/chart/line', // 使用柱状图就加载bar模块，按需加载
+                            ],
+                            function (ec) {
+                                // 基于准备好的dom，初始化echarts图表
+                                var myChart = ec.init(document.getElementById('main8'));
+                                var option = {
+                                    title : {
+                                        text: '四类污染物达标情况'
+                                    },
+                                    tooltip: {
+                                        trigger: 'axis'
+                                    },
+                                    legend: {
+                                        data: ['2014年', '2015年']
+                                    },
+                                    toolbox: {
+                                        show: true,
+                                    },
+                                    calculable: true,
+                                    xAxis: [
+                                        {
+                                            type: 'category',
+                                            data: ['PM2.5', 'PM10', 'SO2', 'NO2']
+                                        }
+                                    ],
+                                    yAxis: [
+                                        {
+                                            type: 'value'
+                                        }
+                                    ],
+                                    series: [
+                                        {
+                                            name: '2014年',
+                                            type: 'bar',
+                                            data: [85.9, 115.8, 21.8, 56.7]
+                                        },
+                                        {
+                                            name: '2015年',
+                                            type: 'bar',
+                                            data: [80.6, 101.5, 13.5, 50]
+
+                                        }
+                                    ]
+                                };
+                                // 为echarts对象加载数据
+                                myChart.setOption(option);
+                            }
+                    );
+                </script>
+                <p style="color:#000000;font-size:17px;margin-top:-3%;margin-left:17%;margin-bottom: 4%;">相比2014年，四类污染物均有下降</p>
+                <img src="../img/godown.png" style="width:30% ;margin-left:60%;
+                margin-top: -54%;">
+                <p style="color:#4689a7;font-size:15px;margin-top:-18%;margin-left:52%;width:40%;">市环保局表示，空气质量变化短期内受气象条件变化
+                    影响较大，但长期来看，主要取决于区域内大气污染
+                    物排放总量。因此，通过调整产业结构、优化能源结
+                    构、改变生活方式，全社会共同努力，使得城市的大
+                    气污染物保持在低排放水平，才能使空气质量彻底改
+                    善，这是一项需要全民参与的长期性、艰巨性的任务。</p>
+                <p style="color:#000000;font-size:10px;margin-left:70%;">资料来源：北京市环保局2015年北京质量状况</p>
+
+            </div>
+            </div>
+    <img src="../img/future.png" style="width: 100% ;
+                margin-top: 5%;"></div>
+    </div>
+    <!--雾与霾的比较，左右形直方图====class="col-md-8"================================================================-->
+    <hr class="featurette-divider">
+    <div class="row featurette" style="height:790px;">
+        <div class="col-md-8">
+            <div class="wuandmai" >
+                <img src="../img/wuandmai.png" style="width: 100% ;height:100%;margin-left:5%;
+                margin-top: 5%;">
+            <img src="../img/compare.png" style="width: 80% ;margin-left:13%;
+                margin-top: 5%;"></div>
+        </div>
+        <p style="margin-left:80%;margin-top:57%;">备注：以上文字资料由天气网提供</p>
+    </div>
+
+
+    <!--雾霾形成==class="col-md-9"===========================================================================-->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-9">
+            <h2 style="text-align: center;">雾霾形成三部曲</h2>
+            <img src="../img/format.png" style="width: 80% ;
+                margin-top: 1%;margin-left:10%"></div>
+        <p style="margin-left:80%;margin-top: 30%;margin-bottom: -0.5%;">备注：以上文字资料由天气网提供</p>
+        </div>
+    </div>
+
+    <!--====世界历史上的雾霾灾难,地球仪上有鼠标效果==============================================================================================-->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+    <div class="col-md-10">
+        <h2 style="text-align: center;">世界历史上的雾霾灾难</h2>
+        <img src="../img/world.png" style="width: 100%;;position:relative;margin-top:-4%;">
+        <div id="duo">
+            <img src="../img/duoruola.png" style="width: 100%;">
+        </div>
+        <!--多诺拉烟雾事件-->
+        <a  id="duonuola" ></a>
+
+        <!--洛杉矶光化学烟雾事件-->
+        <div id="luo">
+            <img src="../img/luoshanji.png" style="width: 100%;">
+        </div>
+        <a  id="luoshanji" ></a>
+
+        <!--伦敦烟雾事件-->
+        <div id="lun">
+            <img src="../img/lundun.png" style="width: 100%;">
+        </div>
+        <a  id="lundun" ></a>
+
+        <!--比利时巴斯河谷烟雾事件-->
+        <div id="bi">
+            <img src="../img/bilishi.png" style="width: 100%;">
+        </div>
+        <a  id="bilishi" ></a>
+
+    </div>
+</div>
+
+<!--雾霾的成分==============================================================================================-->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-3">
+            <h2 style="text-align: center;">雾霾的成分</h2>
+            <div id="main-pie"
+                 style="height:300px;width:95%;margin-top: 7%;margin-left: auto;margin-right: auto;"></div>
+            <script type="text/javascript" charset="UTF-8">
+                // 路径配置
+                var $imgs = [
+                    {area: 'NO3(-)', url: '../img/compo1.png'},
+                    {area: 'OC', url: '../img/compo2.png'},
+                    {area: '矿物', url: '../img/compo3.png'},
+                    {area: '生物气溶胶', url: '../img/compo1.png'},//生物气溶胶在PSD中没有给出信息图，所以暂时重用了NO3(-)的图
+                    {area: '金属', url: '../img/compo4.png'},
+                    {area: 'EC', url: '../img/compo5.png'},
+                    {area: 'NH4(+)', url: '../img/compo6.png'},
+                    {area: 'SO4(2-)', url: '../img/compo7.png'}
+                ];
+                require.config({
+                    paths: {
+                        echarts: '../js'
+                    }
+                });
+                // 使用
+                require(
+                        [
+                            'echarts',
+                            'echarts/chart/pie', // 使用柱状图就加载bar模块，按需加载
+                            'echarts/chart/funnel',
+                        ],
+
+                        function (ec) {
+                            // 基于准备好的dom，初始化echarts图表
+                            var myChart = ec.init(document.getElementById('main-pie'));
+                            var option = {
+
+                                tooltip: {
+                                    trigger: 'item',
+                                    formatter: "{a} <br/>{b} : {c} ({d}%)",
+                                    formatter: function (params, ticket, callback) {
+                                        var $pna = params.name;
+                                        var res = '';
+
+                                        for (var i = 0; i < $imgs.length; i++) {
+                                            if ($imgs[i].area == $pna) {
+                                                res = '<img src="' + $imgs[i].url + '" />';//设置自定义数据的模板，这里的模板是图片
+                                                console.log(res);
+                                                break;
+                                            }
+                                        }
+                                        setTimeout(function () {
+                                            // 仅为了模拟异步回调
+                                            callback(ticket, res);//回调函数，这里可以做异步请求加载的一些代码
+                                        }, 500)
+                                        return 'loading';
+                                    }
+                                },
+
+                                legend: {
+                                    orient: 'vertical',
+                                    x: 'left',
+                                    data: ['NO3(-)', 'OC', '矿物', '生物气溶胶', '金属', 'EC', 'NH4(+)', 'SO4(2-)']
+                                },
+                                toolbox: {
+                                    show: true,
+                                    feature: {
+                                        restore: {show: true, title: '刷新'},
+                                        saveAsImage: {show: true, title: '保存为图片'}
+                                    }
+                                },
+                                calculable: true,
+                                series: [
+                                    {
+                                        name: '访问来源',
+                                        type: 'pie',
+                                        radius: ['50%', '70%'],
+                                        itemStyle: {
+                                            normal: {
+                                                label: {
+                                                    show: false
+                                                },
+                                                labelLine: {
+                                                    show: false
+                                                }
+                                            },
+                                            emphasis: {
+                                                label: {
+                                                    show: true,
+                                                    position: 'center',
+                                                    textStyle: {
+                                                        fontSize: '30',
+                                                        fontWeight: 'bold'
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        data: [
+                                            {value: 20, name: 'NO3(-)'},
+                                            {value: 19, name: 'OC'},
+                                            {value: 21, name: '矿物'},
+                                            {value: 20, name: '生物气溶胶'},
+                                            {value: 20, name: '金属'},
+                                            {value: 19, name: 'EC'},
+                                            {value: 21, name: 'NH4(+)'},
+                                            {value: 20, name: 'SO4(2-)'}
+                                        ]
+                                    }
+                                ]
+                            };
+                            myChart.setOption(option);
+                            var ecConfig = require('echarts/config');
+                            myChart.on(ecConfig.EVENT.HOVER, function (param) {
+                                var selected = param.name;
+                            });
+                        }
+                );
+            </script>
+            <p class="pull-right"><a href="#">回到顶部</a></p>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer id="foot">
+        <p style="text-align: center;position: relative;top:40%;">Copyright © 2016 林正涛，陈绰敏，高隽.All rights Reserved.</p>
+    </footer>
+
+</div><!-- /.container -->
+
+<script src="../js/ie-emulation-modes-warning.js"></script>
+<script src="../js/echarts-all-3.0.0.js" charset="UTF-8"></script><!--与折线图相关-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/echarts.common.min.js" charset="UTF-8"></script>
+<script src="../js/esl.js" charset="UTF-8"></script>
+<script src="../js/HalfSmoothPolygon.js" charset="UTF-8"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/zrender.js" charset="UTF-8"></script>
+<script src="../js/ie10-viewport-bug-workaround.js"></script>
+<script src="../js/effects.js" charset="UTF-8"></script><!--与折线图相关-->
+<script src="../js/Chart.js" type="text/javascript" charset="UTF-8"></script><!--与折线图相关-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/modernizr.min.js" charset="UTF-8"></script><!--与折线图相关-->
+</body>
+</html>
